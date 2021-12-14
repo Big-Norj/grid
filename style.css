@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    /*align items to ensure its at the center of the center*/
+    align-items: center;
+    min-height: 100vh;
+}
+
+.gen-panel{
+    background-color: white;
+    border-radius: 10px;
+    padding: 0px 0px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    /*point use to determine mobile and tv view*/
+    flex-direction: row;
+    text-align: center;
+}
+
+.panel1{
+    border-bottom: 1px solid #e1f1ff;
+    background-color: rgb(226, 133, 37)
+}
+
+.panel1-img{
+    position: relative;
+    right: 80px;
+    padding-top: 25px;
+}
+
+.panel1-header{
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 15px 35px;
+    margin: 20px 100px 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.panel1-para{
+    color: white;
+    margin: 20px 40px;
+    text-align: left;
+    line-height: 1.5;
+    width: 70%;
+    align-content: center;
+}
+
+.panel1-btn{
+    color: rgb(226, 133, 37);
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background-color: white;
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    margin: 50px 90px 20px 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.panel2{
+    background-color: rgb(1, 105, 114);
+}
+
+.panel2-img{
+    position: relative;
+    right: 90px;
+    padding-top: 25px;
+}
+
+.panel2-btn{
+    color: rgb(1, 105, 114);
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background-color: white;
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    margin: 50px 90px 30px 10px;
+    cursor: pointer;
+}
+
+.panel2-header{
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 15px 35px;
+    margin: 20px 100px 20px 0px;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    line-height: 1.5;
+    text-align: left;
+}
+
+.panel3{
+    background-color: rgb(0, 64, 63);
+}
+
+.panel3-btn{
+    color: rgb(0, 64, 63);
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background-color: white;
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    margin: 50px 90px 30px 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.panel3-img{
+    position: relative;
+    right: 90px;
+    padding-top: 25px;
+}
+
+@media(max-width:372px){
+    .gen-panel{
+        flex-direction: column;
+    }
+}
